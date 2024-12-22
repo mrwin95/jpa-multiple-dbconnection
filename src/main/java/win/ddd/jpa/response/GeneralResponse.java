@@ -16,6 +16,12 @@ public class GeneralResponse <T> {
     private String msg;
     private T data;
 
+    // can add more
+
+//    private List<String> errors;
+//    private long timestamp;
+//    private String path;
+
     public static <T> GeneralResponse<T> empty() {
         return GeneralResponse.<T>builder()
                 .success(false)
